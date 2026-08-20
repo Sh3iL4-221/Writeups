@@ -874,3 +874,43 @@ ftp TARGET_IP
 ```
 
 An SMB null session (`-N`) suppresses the password prompt; it does not guarantee that the server permits anonymous access. FTP anonymous access is server-dependent and should be verified only within scope.
+
+## Phishing Basics
+
+### Phishing Types
+- **Phishing** Routine
+- **Spear Phishing** Targeted attack tailored for a specific person
+- **Whaling** A spear phishing whose targets are senior decision-makers and executives.
+
+### Psychology of Phishing
+- **Fear**
+- **Trust**
+- **Scarcity** make something feel rare
+- **Authority**
+- **Curiosity**
+- **Urgency**
+
+### Phishing Techniques
+
+- **URL and Domain Manipulation** 
+  - 'URL Masking', https://tryhackme.com redirecting to http://phisher.com
+  - 'Homograph Attacks', google.com > go0gle.com
+  - 'Typosquatting', tryhackme.com > tryhacme.com
+- **Email Spoofing**
+  - spoof "From" field to display a trusted sender, SMTP doesn't have built-in authentication.
+ - **Credential Harvesting**
+ - **Payload Delivery Mechanisms**
+ 
+### Phishing Tools
+ - **Gophish**
+ - **EvilNginx**
+ - **The Social Engineering Toolkit(SET)**
+ 
+### Recommendation Table
+| Metric | What it measures | Benchmark | Suggested Recommendation(s) |
+| --- | --- | --- | --- |
+| Open Rate | % of users who opened the email. | Industry varies; typical phishing open rates ~50–65% | Targeted refresher training |
+| Click Rate | % of all users who clicked a link. | 8–14% acceptable; >14% high risk | Focused security awareness training |
+|Credential Entry Rate | % of all users who entered credentials after clicking. | <2% low risk; 2–5% moderate risk; >5% high risk | Phishing site identification training, MFA implementation |
+| Attachment Detonation Rate | % of users who opened/executed an attachment. | No formal benchmark; >5–7% suggests risk | Educate on safe handling of attachments, detonation |
+| Reporting Rate (24h) | % of users who reported the email within 24h. |	>40% strong; 30–40% average; <30% low | Reporting awareness campaign |
